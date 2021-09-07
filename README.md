@@ -28,6 +28,12 @@ Clone the [source] with `git`:
 ```bash
 pip install -r requirements.txt
 ```
+
+## Use
+```bash
+python main.py
+```
+
 ## Contributing
 Feel free to submitting pull requests to us.
 ## License
