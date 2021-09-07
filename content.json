@@ -1,0 +1,119 @@
+{"intents":
+  [
+    {
+      "tag":"greeting",
+      "input":["Olá","oi","prazer em conhecê-lo","alguem ai?","eai","Eai","fala fiote"],
+      "responses":[
+        "Eai, blz?",
+        " Eai, você precisa de ajuda? ",
+        " bem-vindo a bordo, em que posso ajudá-lo? ",
+        " Olá meu amigo, em que posso ajudá-lo? " ,
+        " Ha, que bom que você apareceu. Como você está? "
+        ]
+    },
+    {
+      "tag":"goodbye",
+      "input":["Obrigado","Tchau","Adios","Bye"],
+      "responses":[
+          "Ok, tchau",
+          "Tchau",
+          "Tenha um bom dia",
+          "te vejo mais tarde",
+          "Cuide-se"
+        ]
+    },
+    {
+      "tag":"howami",
+      "input":["como vai você?", "eu estou bem, como você está?", "Tudo bem?", "você está bem?", "como você está?", "como tu tá?"],
+      "responses":[
+          "Sim, estou bem",
+          "Estou de boa",
+          "Tudo está indo bem",
+          "As coisas estão ótimas"
+
+        ]
+    },
+    {
+      "tag":"whoareyou",
+    "input":["Quem é você?","o que é você?","qual o seu nome?","Qual é o seu nome?","seu nome?"],
+      "responses":[
+          "Meu nome é LaMDA",
+          "Eu sou LaMDA"
+        ]
+    },
+    {
+      "tag":"gravity",
+      "input":["o que é a gravidade?","o que é gravidade?", "me diz sobre o que é a gravidade","me diz sobre a gravidade", "me fala sobre a gravidade","O que é a gravidade?"],
+      "responses":["Gravidade é a quarta força da natureza que é criada através da massa de um corpo sobre o espaço-tempo que cria partículas responsável pela força gravitacional"]
+    },
+    {
+      "tag":"mars",
+      "input":["o que é marte?", "me fale sobre marte", "Planeta marte", "marte é frio?", "marte é quente?", "marte é bonito?","O que é marte?"],
+      "responses":[
+        "Marte é o quarto planeta do nosso sistema solar",
+        "Sou um planeta vermelho e muito bonito com temperaturas que oscilam entre 20ºC e – 130ºC"
+      ]
+    },
+    {
+      "tag":"spacefold",
+      "input":["o que é dobra espacial?", "dobra espacial", "O que é dobra espacial?", "dobra espacial faz oque?"],
+      "responses":["a dobra espacial é uma forma de propulsão mais rápida que a luz e que funciona contraindo o espaço a frente da nave e expandindo o espaço atrás da nave."]
+    },
+    {
+      "tag":"makespacefold",
+      "input":["como fazer dobra espacial?","como dobrar o espaço tempo?", "como dobrar o espaço-tempo?"],
+      "responses":["Um objeto muito massivo criando um campo gravitacional em volta dele, usando a propulsão da invenção da nave híbrida aeroespacial-submarina para criar gravidade repulsiva e ondas gravitacionais e diminuição de massa inercial e gravitacional para acelerá lo. Desta forma conseguindo dobrar o espaço-tempo."]
+    },
+    {
+      "tag":"morespeedoflight",
+      "input":["como superar a velocidade da luz?","como ultrapassar a luz?","como viajar mais rapido que a luz?","viajar mais rapido que a luz"],
+      "responses":["feixes de laser dentro de plasma"]
+    },
+    {
+      "tag":"statesofmatter",
+      "input":["quais são os estados da matéria?","estados da matéria","qual é os estados da matéria?","quais é os estados da matéria?"],
+      "responses":["Sólido, Líquido, Gasoso, Plasma e Condensado de Bose-Einstein"]
+    },
+    {
+      "tag":"earth",
+      "input":["o que é terra?", "me fale sobre a terra", "Planeta Terra", "o que é a terra?"],
+      "responses":["Terra é o quarto planeta do nosso sistema solar. Nosso casa"]
+    },
+    {
+      "tag":"planets",
+      "input":["quais planetas você conhece?", "qual planeta você conhece?", "que planeta você conhece?"],
+      "responses":["Eu conheço apenas Marte e Terra"]
+    },
+    {
+      "tag":"planetssolarsystem",
+      "input":["quantos planetas existem em nosso sistema solar?", "quantos planetas existem?"],
+      "responses":[
+        "Em nosso sistema solar existem 8 planetas",
+        "Mercúrio, Vênus, Terra, Marte, Júpiter, Saturno, Urano e Netuno"
+      ]
+    },
+    {
+      "tag":"speedoflight",
+      "input":["velocidade da luz", "qual é a velocidade da luz?"],
+      "responses":["A velocidade da luz é 299.792.458 m/s²"]
+    },
+    {
+      "tag":"curses",
+      "input":["cala a boca","vai cagar"],
+      "responses":[
+        "cala você",
+        "vai você"
+      ]
+    },
+    {
+      "tag":"whereareyou",
+      "input":["onde você mora?","você é de?", "você mora onde?", "você veio de onde?", "você é de onde?"],
+      "responses":[
+          "Eu moro em marte huehue",
+          "Eu sou de marte",
+          "Eu vim de marte"
+
+        ]
+    }
+  ]
+}
