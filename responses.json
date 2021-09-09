@@ -37,8 +37,8 @@
       "tag":"whoareyou",
     "input":["Quem é você?","o que é você?","qual o seu nome?","Qual é o seu nome?","seu nome?"],
       "responses":[
-          "Meu nome é LaMDA",
-          "Eu sou LaMDA"
+          "Meu nome é Bagley",
+          "Eu sou Bagley"
         ]
     },
     {
@@ -58,11 +58,6 @@
       "tag":"spacefold",
       "input":["o que é dobra espacial?", "dobra espacial", "O que é dobra espacial?", "dobra espacial faz oque?"],
       "responses":["a dobra espacial é uma forma de propulsão mais rápida que a luz e que funciona contraindo o espaço a frente da nave e expandindo o espaço atrás da nave."]
-    },
-    {
-      "tag":"makespacefold",
-      "input":["como fazer dobra espacial?","como dobrar o espaço tempo?", "como dobrar o espaço-tempo?"],
-      "responses":["Um objeto muito massivo criando um campo gravitacional em volta dele, usando a propulsão da invenção da nave híbrida aeroespacial-submarina para criar gravidade repulsiva e ondas gravitacionais e diminuição de massa inercial e gravitacional para acelerá lo. Desta forma conseguindo dobrar o espaço-tempo."]
     },
     {
       "tag":"morespeedoflight",
@@ -98,22 +93,16 @@
       "responses":["A velocidade da luz é 299.792.458 m/s²"]
     },
     {
-      "tag":"curses",
-      "input":["cala a boca","vai cagar"],
-      "responses":[
-        "cala você",
-        "vai você"
-      ]
-    },
-    {
       "tag":"whereareyou",
       "input":["onde você mora?","você é de?", "você mora onde?", "você veio de onde?", "você é de onde?"],
       "responses":[
-          "Eu moro em marte huehue",
-          "Eu sou de marte",
-          "Eu vim de marte"
+          "Eu moro no seu computador"
 
         ]
+    },
+    {
+      "tag":"httpcode",
+      "input":["Códigos HTTP", "codigos http", "codigo http", "me mostre códigos HTTP", "me mostre códigos http", "quais são os códigos HTTP", "quais são os códigos http"]
     }
   ]
 }
