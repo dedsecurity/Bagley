@@ -1,6 +1,7 @@
 import tensorflow as tf
 import numpy as np
 import pandas as pd
+import os
 import json
 import random
 import nltk
@@ -9,7 +10,7 @@ from tensorflow.keras.layers import Input, Embedding, LSTM , Dense,GlobalMaxPool
 from tensorflow.keras.models import Model
 import matplotlib.pyplot as plt
 
-with open('./content.json') as content:
+with open('./responses.json') as content:
   data1 = json.load(content)
 
 tags = []
@@ -89,3 +90,27 @@ while True:
   print(random.choice(responses[response_tag]))
   if response_tag == "goodbye":
     break
+  elif response_tag == "howtogetinformation":
+    print("""
+    Internet: sites de busca, redes sociais, blogs, wikis, fóruns e até mesmo na Deep Web.
+    Mídia: jornais, televisão, revistas e rádio.
+    Informações públicas de fontes governamentais.
+    Eventos, conferências, trabalhos e até bibliotecas.
+
+    OSINT pode ser usado em diversos meios de atuação como por exemplo: combate aos ataques terroristas, recrutamento, propriedade intelectual, e até mesmo por empresas de marketing.
+
+    Os processos principais na aplicação do OSINT (Open Source Intelligence) são: reconhecimento –> fontes de informação –> coleta de dados –> processamento de dados –> análise de dados –> inteligência
+    """)
+  elif response_tag == "listen":
+    ip = input("Ip: ")
+    port = input("Port: ")
+    os.system("nc -l"+ip+"-p"+port+"-v")
+  elif response_tag == "informationwebapplications":
+    url = input("Url: ")
+    os.system("dirb "+url)
+  elif response_tag == "getaddress":
+    urlhost = input("Url: ")
+    os.system("host"+urlhost)
+  elif response_tag == "dmarc":
+    urldmarc = input("Url:")
+    os.system("host -t txt _dmarc."+urldmarc)

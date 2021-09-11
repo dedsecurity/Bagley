@@ -102,7 +102,45 @@
     },
     {
       "tag":"httpcode",
-      "input":["Códigos HTTP", "codigos http", "codigo http", "me mostre códigos HTTP", "me mostre códigos http", "quais são os códigos HTTP", "quais são os códigos http"]
+      "input":["Códigos HTTP", "codigos http", "codigo http", "me mostre códigos HTTP", "me mostre códigos http", "quais são os códigos HTTP", "quais são os códigos http"],
+      "responses":["200 OK - O recurso foi encontrado com sucesso\n301 Moved Permanently - Redirecionamento para outra URL\n302 Found - O recurso está temporariamente sobre outra URL\n403 Forbidden = falta privilégios suficientes\n404 Not Found - O servidor não encontrou o recurso buscado\n500 Internal Server Error - O servidor não suporta essa funcionalidade"]
+
+    },
+    {
+      "tag":"howtogetinformation",
+      "input":["como obter informações?", "Como obter informações?"],
+      "responses":[]
+
+    },
+    {
+      "tag":"vulnweb",
+      "input":["Vulnerabilidades web", "quais são as vulnerabilidades web?", "Quais são as vulnerabilidades web?"],
+      "responses":["As falhas de injeção, como SQL, OS, XXE e LDAP.\n\nGERENCIAMENTO DE SESSÃO E QUEBRAS DE AUTENTICAÇÃO\n\nCROSS-SITE SCRIPTING (XSS)"]
+    },
+    {
+      "tag":"listen",
+      "input":["crie um servidor para backdoor", "utilize o netcat para o backdoor", "escutar um backdoor"],
+      "responses":[]
+    },
+    {
+      "tag":"informationwebapplications",
+      "input":["informações de uma aplicação web", "informações em aplicações Web", "Usar o dirb para um site"],
+      "responses":[]
+    },
+    {
+      "tag":"howtoacessaserver",
+      "input":["como acessar um servidor?", "como entrar em um servidor?", "como hackear um servidor?"],
+      "responses":["nc -v site.com 80 # conecta com o servidor\nGET / HTTP/1.0 # retorna o codigo fonte do site\nHEAD / HTTP/1.0 # traz o head \nGET /simon /HTTP/1.0 # ver se tem essa pagina no servidor"]
+    },
+    {
+      "tag":"getaddress",
+      "input":["obter endereço ip e nameservers de um site", "obter endereço ip e nameservers", "pegar ip de um site"],
+      "responses":[]
+    },
+    {
+      "tag":"dmarc",
+      "input":["ver se um email está vulnerável"],
+      "responses":[]
     }
   ]
 }
