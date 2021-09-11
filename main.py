@@ -69,7 +69,7 @@ plt.legend()
 
 while True:
   texts_p = []
-  prediction_input = input('""" ')
+  prediction_input = input('Bagley: ')
 
   
   prediction_input = [letters.lower() for letters in prediction_input if letters not in string.punctuation]
