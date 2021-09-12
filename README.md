@@ -8,6 +8,9 @@ Author:   Simon Kinjo
 Maintenance:  Simon Kinjo
 ```
 
+>Ded Security Bagley is an artificial intelligence tool developed by Ded Security that helps you hack
+---
+
 ## Installation
 
 Make sure you have installed the dependencies:
