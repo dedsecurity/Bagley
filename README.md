@@ -1,7 +1,5 @@
 <h1 align="center">Ded Security Bagley</h1>
 
-## Ded Security Bagley is an AI that helps you with hacking
-
 ```bash
 Website:  https://www.dedsecurity.com
 Author:   Simon Kinjo
