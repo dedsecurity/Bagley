@@ -1,6 +1,6 @@
 <h1 align="center">Ded Security Bagley</h1>
 
-## Ded Security Bagley is an AI that helps you hack
+## Ded Security Bagley is an AI that helps you with hacking
 
 ```bash
 Website:  https://www.dedsecurity.com
@@ -27,6 +27,9 @@ Clone the [source] with `git`:
 
 ```bash
 pip install -r requirements.txt
+```
+```bash
+./install.sh
 ```
 
 ## Use
