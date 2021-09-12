@@ -38,6 +38,7 @@ pip install -r requirements.txt
 ```bash
 python main.py
 ```
+---
 
 ## Contributing
 Feel free to submitting pull requests to us.
