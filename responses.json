@@ -6,9 +6,8 @@
       "responses":[
         "Eai, blz?",
         " Eai, você precisa de ajuda? ",
-        " bem-vindo a bordo, em que posso ajudá-lo? ",
-        " Olá meu amigo, em que posso ajudá-lo? " ,
-        " Ha, que bom que você apareceu. Como você está? "
+        " Olá meu amigo" ,
+        " Que bom que você apareceu. Como você está? "
         ]
     },
     {
@@ -37,14 +36,14 @@
       "tag":"whoareyou",
     "input":["Quem é você?","o que é você?","qual o seu nome?","Qual é o seu nome?","seu nome?"],
       "responses":[
-          "Meu nome é Bagley",
-          "Eu sou Bagley"
+          "Meu nome é Bumblebee",
+          "Eu sou Bumblebee"
         ]
     },
     {
       "tag":"gravity",
       "input":["o que é a gravidade?","o que é gravidade?", "me diz sobre o que é a gravidade","me diz sobre a gravidade", "me fala sobre a gravidade","O que é a gravidade?"],
-      "responses":["Gravidade é a quarta força da natureza que é criada através da massa de um corpo sobre o espaço-tempo que cria partículas responsável pela força gravitacional"]
+      "responses":["Gravidade é a quarta força da natureza que é criada através da geometria(curvatura) do Espaço-Tempo"]
     },
     {
       "tag":"mars",

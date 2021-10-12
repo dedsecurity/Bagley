@@ -8,9 +8,11 @@ import os
 import json
 import random
 import nltk
+import torch
 from tensorflow.keras.preprocessing.text import Tokenizer
 from tensorflow.keras.layers import Input, Embedding, LSTM , Dense,GlobalMaxPooling1D,Flatten
 from tensorflow.keras.models import Model
+from transformers import BertModel, BertTokenizer
 import matplotlib.pyplot as plt
 
 with open('./responses.json') as content:
@@ -66,13 +68,28 @@ model.compile(loss="sparse_categorical_crossentropy",optimizer='adam',metrics=['
 
 train = model.fit(x_train,y_train,epochs=200)
 
+model1 = BertModel.from_pretrained('bert-base-uncased')
+tokenizer1 = BertTokenizer.from_pretrained('bert-base-uncased')
+
 plt.plot(train.history['accuracy'],label='training set accuracy')
 plt.plot(train.history['loss'],label='training set loss')
 plt.legend()
 
 while True:
+
+  import random
+
   texts_p = []
-  prediction_input = input('Bagley: ')
+  prediction_input = input('\033[33mBee: \033[m')
+
+  tokens = tokenizer1.tokenize(prediction_input)
+  tokens = ['[CLS]'] + tokens + ['[SEP]']
+  tokens = tokens + ['[PAD]'] + ['[PAD]']
+  attention_mask = [1 if i!= '[PAD]' else 0 for i in tokens]
+  token_ids = tokenizer1.convert_tokens_to_ids(tokens)
+  token_ids = torch.tensor(token_ids).unsqueeze(0)
+  attention_mask = torch.tensor(attention_mask).unsqueeze(0)
+  hidden_rep, cls_head = model1(token_ids, attention_mask = attention_mask)
 
   
   prediction_input = [letters.lower() for letters in prediction_input if letters not in string.punctuation]
