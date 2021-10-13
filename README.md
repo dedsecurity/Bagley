@@ -6,7 +6,7 @@ Author:   Simon Kinjo
 Maintenance:  Simon Kinjo
 ```
 
->Ded Security Bagley is an artificial intelligence tool developed by Ded Security that helps you hack
+>Ded Security Bee is an artificial intelligence tool developed by Ded Security that helps you with your search
 ---
 
 ## Installation
@@ -18,11 +18,11 @@ Make sure you have installed the dependencies:
 
 Clone the [source] with `git`:
  ```sh
-   git clone https://github.com/dedsecurity/Bagley
-   cd Bagley
+   git clone https://github.com/dedsecurity/Bee
+   cd Bee
    ```
 
- [source]: https://github.com/dedsecurity/Bagley
+ [source]: https://github.com/dedsecurity/Bee
  
  Use the package manager [pip](https://pip.pypa.io/en/stable/) to install the libraries.
 
