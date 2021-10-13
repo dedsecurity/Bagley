@@ -1,4 +1,4 @@
-<h1 align="center">Ded Security Bagley</h1>
+<h1 align="center">Ded Security Bee</h1>
 
 ```bash
 Website:  https://www.dedsecurity.com
