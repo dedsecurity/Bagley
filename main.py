@@ -66,7 +66,7 @@ model  = Model(i,x)
 
 model.compile(loss="sparse_categorical_crossentropy",optimizer='adam',metrics=['accuracy'])
 
-train = model.fit(x_train,y_train,epochs=200)
+train = model.fit(x_train,y_train,epochs=300)
 
 model1 = BertModel.from_pretrained('bert-base-uncased')
 tokenizer1 = BertTokenizer.from_pretrained('bert-base-uncased')

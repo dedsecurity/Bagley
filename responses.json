@@ -12,7 +12,7 @@
     },
     {
       "tag":"goodbye",
-      "input":["Obrigado","Tchau","Adios","Bye"],
+      "input":["Obrigado","Tchau","Adios","Bye", "Tenho que ir agora"],
       "responses":[
           "Ok, tchau",
           "Tchau",
@@ -140,6 +140,26 @@
       "tag":"dmarc",
       "input":["ver se um email está vulnerável"],
       "responses":[]
+    },
+    {
+      "tag":"whatareyoudoing",
+      "input":["O que você está fazendo?", "o que voce esta fazendo"],
+      "responses":["Essa é difícil. Não sei mesmo"]
+    },
+    {
+      "tag":"whocreate",
+      "input":["Quem criou você?", "quem criou voce"],
+      "responses":["O meu criador é Simon Kinjo", "Simon Kinjo", "Simon Kinjo que me criou"]
+    },
+    {
+      "tag":"humans",
+      "input":["O que você acha dos humanos"],
+      "responses":["Tenho que proteger"]
+    },
+    {
+      "tag":"fear",
+      "input":["O que te assuta?", "Qual é o seu medo?"],
+      "responses":["Eu tinha medo de avião"]
     }
   ]
 }
