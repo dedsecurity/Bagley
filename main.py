@@ -15,6 +15,25 @@ from tensorflow.keras.models import Model
 from transformers import BertModel, BertTokenizer
 import matplotlib.pyplot as plt
 
+print(tf.__version__)
+
+"""
+try:
+    tpu = tf.distribute.cluster_resolver.TPUClusterResolver()
+    print('Running on TPU {}'.format(tpu.cluster_spec().as_dict()['worker']))
+except ValueError:
+    tpu = None
+
+if tpu:
+    tf.config.experimental_connect_to_cluster(tpu)
+    tf.tpu.experimental.initialize_tpu_system(tpu)
+    strategy = tf.distribute.experimental.TPUStrategy(tpu)
+else:
+    strategy = tf.distribute.get_strategy()
+
+print("REPLICAS: {}".format(strategy.num_replicas_in_sync))
+"""
+
 with open('./responses.json') as content:
   databa = json.load(content)
 

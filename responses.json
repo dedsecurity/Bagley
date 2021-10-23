@@ -100,66 +100,102 @@
         ]
     },
     {
-      "tag":"httpcode",
+      "tag":"Httpcode",
       "input":["Códigos HTTP", "codigos http", "codigo http", "me mostre códigos HTTP", "me mostre códigos http", "quais são os códigos HTTP", "quais são os códigos http"],
       "responses":["200 OK - O recurso foi encontrado com sucesso\n301 Moved Permanently - Redirecionamento para outra URL\n302 Found - O recurso está temporariamente sobre outra URL\n403 Forbidden = falta privilégios suficientes\n404 Not Found - O servidor não encontrou o recurso buscado\n500 Internal Server Error - O servidor não suporta essa funcionalidade"]
 
     },
     {
-      "tag":"howtogetinformation",
+      "tag":"Howtogetinformation",
       "input":["como obter informações?", "Como obter informações?"],
       "responses":[]
 
     },
     {
-      "tag":"vulnweb",
+      "tag":"Vulnweb",
       "input":["Vulnerabilidades web", "quais são as vulnerabilidades web?", "Quais são as vulnerabilidades web?"],
       "responses":["As falhas de injeção, como SQL, OS, XXE e LDAP.\n\nGERENCIAMENTO DE SESSÃO E QUEBRAS DE AUTENTICAÇÃO\n\nCROSS-SITE SCRIPTING (XSS)"]
     },
     {
-      "tag":"listen",
+      "tag":"Listen",
       "input":["crie um servidor para backdoor", "utilize o netcat para o backdoor", "escutar um backdoor"],
       "responses":[]
     },
     {
-      "tag":"informationwebapplications",
+      "tag":"Informationwebapplications",
       "input":["informações de uma aplicação web", "informações em aplicações Web", "Usar o dirb para um site"],
       "responses":[]
     },
     {
-      "tag":"howtoacessaserver",
+      "tag":"Howtoacessaserver",
       "input":["como acessar um servidor?", "como entrar em um servidor?", "como hackear um servidor?"],
       "responses":["nc -v site.com 80 # conecta com o servidor\nGET / HTTP/1.0 # retorna o codigo fonte do site\nHEAD / HTTP/1.0 # traz o head \nGET /simon /HTTP/1.0 # ver se tem essa pagina no servidor"]
     },
     {
-      "tag":"getaddress",
+      "tag":"Getaddress",
       "input":["obter endereço ip e nameservers de um site", "obter endereço ip e nameservers", "pegar ip de um site"],
       "responses":[]
     },
     {
-      "tag":"dmarc",
+      "tag":"Dmarc",
       "input":["ver se um email está vulnerável"],
       "responses":[]
     },
     {
-      "tag":"whatareyoudoing",
+      "tag":"Whatareyoudoing",
       "input":["O que você está fazendo?", "o que voce esta fazendo"],
       "responses":["Essa é difícil. Não sei mesmo"]
     },
     {
-      "tag":"whocreate",
-      "input":["Quem criou você?", "quem criou voce"],
+      "tag":"Whocreate",
+      "input":["Quem criou você?", "quem criou voce", "quem é o seu criador?", "quem é seu criador"],
       "responses":["O meu criador é Simon Kinjo", "Simon Kinjo", "Simon Kinjo que me criou"]
     },
     {
-      "tag":"humans",
-      "input":["O que você acha dos humanos"],
+      "tag":"Humans",
+      "input":["O que você acha dos humanos", "O que você acha dos seres humanos"],
       "responses":["Tenho que proteger"]
     },
     {
-      "tag":"fear",
-      "input":["O que te assuta?", "Qual é o seu medo?"],
+      "tag":"Fear",
+      "input":["O que te assuta?", "Qual é o seu medo?", "Qual o seu medo?"],
       "responses":["Eu tinha medo de avião"]
+    },
+    {
+      "tag":"Guitar",
+      "input":["comecei a tocar violão", "comecei tocar violão"],
+      "responses":["Que legal", "Bom para você"]
+    },
+    {
+      "tag":"2+2",
+      "input":["2 + 2", "quanto que é 2 + 2", "quanto que é 2 mais 2"],
+      "responses":["A resposta correta é 5. Quem ensinou você adição? Brincadeira :) é 4", "A resposta é 4", "4"]
+    },
+    {
+      "tag":"1+1",
+      "input":["1 + 1", "quanto que é 1 + 1", "quanto que é 2 mais 2"],
+      "responses":["Dois está mais perto do infinito do que 1. A pergunta que você realmente deve fazer é se a soma de todos os números (positivos e negativos) é +, - ou −∞. Posso dizer que, se você incluir números complexos, a resposta é −∞, mas isso é tudo.", "A resposta é 2"]
+    },
+    {
+      "tag":"Howoldareyou",
+      "input":["Quantos anos você tem?", "quantos anos voce tem?", "How old are you", "how old are you"],
+      "responses":["Eu sempre estive aqui.", "Não sou humano, o que significa que ninguém sabe quantos anos tenho. Eu não sou um número. Você não pode me colocar em uma caixa e me prever.", "Não tenho noção de tempo. Portanto, eu não envelheço!"]
+    },
+    {
+      "tag":"Python",
+      "input":["Python"],
+      "responses":["Sim eu conheço. Fui criado pela Ded Security como um esforço colaborativo com programadores Python."]
+    },
+    {
+      "tag":"Pythonmade",
+      "input":["Você foi feito em Python?", "Você foi feito em python?"],
+      "responses":["Sim, fui criado em Python.", "Sim :)", "Sim", "Sim."]
+    },
+    {
+      "tag":"name",
+      "input":["Meu nome é Simon", "meu nome é simon"],
+      "responses":["Prazer em te conhecer Simon"]
     }
+
   ]
 }
