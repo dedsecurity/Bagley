@@ -9,6 +9,7 @@ import json
 import random
 import nltk
 import torch
+import time
 from tensorflow.keras.preprocessing.text import Tokenizer
 from tensorflow.keras.layers import Input, Embedding, LSTM , Dense,GlobalMaxPooling1D,Flatten
 from tensorflow.keras.models import Model
@@ -16,6 +17,30 @@ from transformers import BertModel, BertTokenizer
 import matplotlib.pyplot as plt
 
 print(tf.__version__)
+
+def time_matmul(x):
+  start = time.time()
+  for loop in range(10):
+    tf.matmul(x, x)
+
+  result = time.time()-start
+
+  print("10 loops: {:0.2f}ms".format(1000*result))
+
+# Force execution on CPU
+print("On CPU:")
+with tf.device("CPU:0"):
+  x = tf.random.uniform([1000, 1000])
+  assert x.device.endswith("CPU:0")
+  time_matmul(x)
+
+# Force execution on GPU #0 if available
+if tf.config.list_physical_devices("GPU"):
+  print("On GPU:")
+  with tf.device("GPU:0"): # Or GPU:1 for the 2nd GPU, GPU:2 for the 3rd etc.
+    x = tf.random.uniform([1000, 1000])
+    assert x.device.endswith("GPU:0")
+    time_matmul(x)
 
 """
 try:
@@ -81,7 +106,7 @@ x = Embedding(vocabulary+1,10)(i)
 x = LSTM(10,return_sequences=True)(x)
 x = Flatten()(x)
 x = Dense(output_length,activation="softmax")(x)
-model  = Model(i,x)
+model = Model(i, x)
 
 model.compile(loss="sparse_categorical_crossentropy",optimizer='adam',metrics=['accuracy'])
 
@@ -94,12 +119,16 @@ plt.plot(train.history['accuracy'],label='training set accuracy')
 plt.plot(train.history['loss'],label='training set loss')
 plt.legend()
 
+import api
+
+print(api.banner())
+
 while True:
 
   import random
 
   texts_p = []
-  prediction_input = input('\033[33mBee: \033[m')
+  prediction_input = input(': ')
 
   tokens = tokenizer1.tokenize(prediction_input)
   tokens = ['[CLS]'] + tokens + ['[SEP]']
@@ -126,7 +155,7 @@ while True:
 
   
   response_tag = le.inverse_transform([output])[0]
-  print(random.choice(responses[response_tag]))
+  print("\033[33mBee:\033[m",random.choice(responses[response_tag]))
   if response_tag == "goodbye":
     break
   elif response_tag == "howtogetinformation":

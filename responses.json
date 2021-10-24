@@ -2,7 +2,7 @@
   [
     {
       "tag":"greeting",
-      "input":["Olá","oi","prazer em conhecê-lo","alguem ai?","eai","Eai","fala fiote"],
+      "input":["Olá","oi","prazer em conhecê-lo","alguem ai?","eai","Eai","fala fiote", "ola"],
       "responses":[
         "Eai, blz?",
         " Eai, você precisa de ajuda? ",
@@ -18,7 +18,10 @@
           "Tchau",
           "Tenha um bom dia",
           "te vejo mais tarde",
-          "Cuide-se"
+          "Cuide-se",
+          "Adios",
+          "Bye",
+          "Good-bye"
         ]
     },
     {
@@ -43,7 +46,7 @@
     {
       "tag":"gravity",
       "input":["o que é a gravidade?","o que é gravidade?", "me diz sobre o que é a gravidade","me diz sobre a gravidade", "me fala sobre a gravidade","O que é a gravidade?"],
-      "responses":["Gravidade é a quarta força da natureza que é criada através da geometria(curvatura) do Espaço-Tempo"]
+      "responses":["Gravidade é a quarta força da natureza que é criada através da geometria(curvatura) do Espaço-Tempo", "É um segredo.", "A gravidade é 9.81m/s^2"]
     },
     {
       "tag":"mars",
@@ -142,11 +145,6 @@
       "responses":[]
     },
     {
-      "tag":"Whatareyoudoing",
-      "input":["O que você está fazendo?", "o que voce esta fazendo"],
-      "responses":["Essa é difícil. Não sei mesmo"]
-    },
-    {
       "tag":"Whocreate",
       "input":["Quem criou você?", "quem criou voce", "quem é o seu criador?", "quem é seu criador"],
       "responses":["O meu criador é Simon Kinjo", "Simon Kinjo", "Simon Kinjo que me criou"]
@@ -168,17 +166,17 @@
     },
     {
       "tag":"2+2",
-      "input":["2 + 2", "quanto que é 2 + 2", "quanto que é 2 mais 2"],
+      "input":["2 + 2", "quanto que é 2 + 2", "quanto que é 2 mais 2", "2+2"],
       "responses":["A resposta correta é 5. Quem ensinou você adição? Brincadeira :) é 4", "A resposta é 4", "4"]
     },
     {
       "tag":"1+1",
-      "input":["1 + 1", "quanto que é 1 + 1", "quanto que é 2 mais 2"],
+      "input":["1 + 1", "quanto que é 1 + 1", "quanto que é 2 mais 2", "1+1"],
       "responses":["Dois está mais perto do infinito do que 1. A pergunta que você realmente deve fazer é se a soma de todos os números (positivos e negativos) é +, - ou −∞. Posso dizer que, se você incluir números complexos, a resposta é −∞, mas isso é tudo.", "A resposta é 2"]
     },
     {
       "tag":"Howoldareyou",
-      "input":["Quantos anos você tem?", "quantos anos voce tem?", "How old are you", "how old are you"],
+      "input":["Quantos anos você tem?", "quantos anos voce tem?", "How old are you", "how old are you", "qual é a sua idade?", "qual é sua idade?", "qual a sua idade?"],
       "responses":["Eu sempre estive aqui.", "Não sou humano, o que significa que ninguém sabe quantos anos tenho. Eu não sou um número. Você não pode me colocar em uma caixa e me prever.", "Não tenho noção de tempo. Portanto, eu não envelheço!"]
     },
     {
@@ -193,8 +191,33 @@
     },
     {
       "tag":"name",
-      "input":["Meu nome é Simon", "meu nome é simon"],
+      "input":["Meu nome é Simon", "meu nome é simon", "meu nome eh Simon"],
       "responses":["Prazer em te conhecer Simon"]
+    },
+    {
+      "tag":"hahah",
+      "input":["hahaha", "hahah", "hahahaaa", "kkkkkk", "kkkk"],
+      "responses":["O que é tão engraçado"]
+    },
+    {
+      "tag":"nothing",
+      "input":["     ", " ", ""],
+      "responses":["como eu posso te ajudar?"]
+    },
+    {
+      "tag":"darkmatter",
+      "input":["O que é matéria escura?", "o que é a materia escura?", "o que é a matéria escura?"],
+      "responses":["Nós não sabemos o que exatamente a matéria escura é"]
+    },
+    {
+      "tag":"ok",
+      "input":["Ok", "ok", "Okay", "tá bom"],
+      "responses":["você te certeza?", "qual é a pergunta?"]
+    },
+    {
+      "tag":"whatareyoudoing",
+      "input":["O que você está fazendo?", "o que voce ta fazendo", "o que você tá fazendo?"],
+      "responses":["Atualmente estou ajudando você.", "Ajudando você.", "Essa é difícil. Não sei mesmo"]
     }
 
   ]
