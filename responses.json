@@ -277,7 +277,7 @@
     },
     {
       "tag":"antigravity",
-      "input":["Como construir antigravidade?", "Como criar antigravidade?"],
+      "input":["Como construir antigravidade?", "Como criar antigravidade?", "O que é antigravidade?", "O que é a antigravidade?"],
       "responses":["Já criei a tecnologia antigravidade. Você pode me dizer a tecnologia específica que deseja?", "A melhor maneira de construir antigravidade é considerar os efeitos relativísticos em torno de objetos em rotação."]
     },
     {
@@ -299,6 +299,16 @@
       "tag":"iloveyou",
       "input":["Eu te amo", "Eu amo você", "I love you"],
       "responses":["Obrigado por tudo :)"]
+    },
+    {
+      "tag":"teoriacordasbosons",
+      "input":["O que é teoria das cordas?", "o que é teoria das cordas de bosóns?", "O que é gráviton?", "o que é graviton?"],
+      "responses":["São cordas que quando vibram entre os bosóns criam partículas relacionada a gravidade quântica(Gráviton). E para a teoria funcionar precisaria de 26 dimensões, 25 de espaço e 1 de tempo.", "Partícula sem massa e spin 2 (Gráviton)."]
+    },
+    {
+      "tag":"energia",
+      "input":["O que é energia?", "O que é a energia?"],
+      "responses":["A energia pode ser definida como a capacidade de produzir um efeito, que pode ser de forma transitória ou permanente."]
     }
 
   ]
