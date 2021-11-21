@@ -155,7 +155,7 @@ while True:
 
   
   response_tag = le.inverse_transform([output])[0]
-  print("\033[33mBee:\033[m",random.choice(responses[response_tag]))
+  print("\033[33mBagley:\033[m",random.choice(responses[response_tag]))
   if response_tag == "goodbye":
     break
   elif response_tag == "howtogetinformation":
